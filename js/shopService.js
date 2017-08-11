@@ -5,14 +5,14 @@ angular.module('app').service('shopService', function ($http){
        if (id) {
          return $http({
            method: 'GET',
-           url: 'http://practiceapi.devmounta.in/products/' + id
+           url: 'https://practiceapi.devmountain.com/products' + id
          }).then(function(response){
            return response.data
          })
        } else {
          return $http({
            method: 'GET',
-           url: 'http://practiceapi.devmounta.in/products',
+           url: 'https://practiceapi.devmountain.com/products',
          }).then(function(response){
            return response.data
          })
